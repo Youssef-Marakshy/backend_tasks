@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "63791c4b884035a561f15b47"
+  },
+  "name": "category 2",
+  "image": "assets/img/cat-2.jpg",
+  "productCount": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637aa5e4ed9743add6744128"
+  },
+  "name": "category 3",
+  "image": "assets/img/cat-3.jpg",
+  "productCount": 0,
+  "__v": 0
+}]

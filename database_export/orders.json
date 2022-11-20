@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "637aa249e45523271b9cdae9"
+  },
+  "user_id": "637a97a7b66e5d9eb4e46475",
+  "total_price": 110,
+  "sub_total_price": 100,
+  "shipping": 10,
+  "order_date": "2022-01-01",
+  "order_details": [
+    {
+      "product_id": "637a29d6f5660971d21084a0",
+      "qty": 2,
+      "price": 25,
+      "_id": {
+        "$oid": "637aa249e45523271b9cdaea"
+      }
+    }
+  ],
+  "shipping_info": {
+    "first_name": "Youssef",
+    "last_name": "Fathy",
+    "email": "youssef.marakshy@gmail.com",
+    "mobile_number": "01092812848",
+    "address1": "20 M A",
+    "address2": "",
+    "country": "Egypt",
+    "city": "Cairo",
+    "state": "Zamalek",
+    "zip_code": "11211"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637aa402e45523271b9cdaee"
+  },
+  "user_id": "637a97a7b66e5d9eb4e46475",
+  "total_price": 110,
+  "sub_total_price": 100,
+  "shipping": 10,
+  "order_date": "2022-01-01",
+  "order_details": [
+    {
+      "product_id": "637a29d6f5660971d21084a0",
+      "qty": 2,
+      "price": 25,
+      "_id": {
+        "$oid": "637aa402e45523271b9cdaef"
+      }
+    }
+  ],
+  "shipping_info": {
+    "first_name": "Youssef",
+    "last_name": "Fathy",
+    "email": "youssef.marakshy@gmail.com",
+    "mobile_number": "01092812848",
+    "address1": "20 M A",
+    "address2": "",
+    "country": "Egypt",
+    "city": "Cairo",
+    "state": "Zamalek",
+    "zip_code": "11211"
+  },
+  "__v": 0
+}]

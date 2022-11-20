@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "637a29d6f5660971d21084a0"
+  },
+  "name": "Product 6 Cat2",
+  "image": "assets/img/prod-6.jpg",
+  "desc": "Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 ",
+  "category_id": "63791c4b884035a561f15b47",
+  "is_featured": false,
+  "is_recent": true,
+  "price": 110,
+  "discount": 0.25,
+  "rating": 3,
+  "rating_count": 120,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637aa7778770ff6238a036a3"
+  },
+  "name": "Product 7 Cat2",
+  "image": "assets/img/prod-7.jpg",
+  "desc": "product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 ",
+  "category_id": "63791c4b884035a561f15b47",
+  "is_featured": true,
+  "is_recent": false,
+  "price": 120,
+  "discount": 0.25,
+  "rating": 5,
+  "rating_count": 120,
+  "__v": 0
+}]

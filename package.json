@@ -1,18 +1,20 @@
 {
-  "name": "summer-cource",
+  "name": "multi-shop-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend API for an sample E-commerce website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js ahmed Tamer Weal Waled Gamal Saied"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["express", "API", "nodejs", "mongodb", "backend"],
+  "author": "Youssef Elmarakshy",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-    "index.js": "0.0.3",
-    "mathjs": "^11.3.0",
-    "nodemon": "^2.0.20"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.2",
+    "validate-structure": "^2.0.0"
   }
 }

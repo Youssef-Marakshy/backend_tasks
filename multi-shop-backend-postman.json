@@ -1,0 +1,1187 @@
+{
+	"info": {
+		"_postman_id": "dd468a36-f824-4647-a51d-0e2f37e1798e",
+		"name": "Multi-Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24086476"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "AddProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvdXNzZWYubWFyYWtzaHlAZ21haWwuY29tIiwiaWQiOiI2MzdhOTdhN2I2NmU1ZDllYjRlNDY0NzUiLCJpYXQiOjE2Njg5ODAzNzJ9.TUOZ2vdSFlqYKIBseNwveBIhFLOzrkGfaU_yKJQI9MI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Product 7 Cat2\",\r\n  \"image\": \"assets/img/prod-7.jpg\",\r\n  \"category_id\": \"63791c4b884035a561f15b47\",\r\n  \"price\": 120,\r\n  \"discount\": 0.25,\r\n  \"rating\": 5,\r\n  \"rating_count\": 120,\r\n  \"is_featured\": true,\r\n  \"is_recent\": false,\r\n  \"description\": \"product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddProduct Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvdXNzZWYubWFyYWtzaHlAZ21haWwuY29tIiwiaWQiOiI2MzdhOTdhN2I2NmU1ZDllYjRlNDY0NzUiLCJpYXQiOjE2Njg5ODAzNzJ9.TUOZ2vdSFlqYKIBseNwveBIhFLOzrkGfaU_yKJQI9MI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Product 7 Cat2\",\r\n  \"image\": \"assets/img/prod-7.jpg\",\r\n  \"category_id\": \"63791c4b884035a561f15b47\",\r\n  \"price\": 120,\r\n  \"discount\": 0.25,\r\n  \"rating\": 5,\r\n  \"rating_count\": 120,\r\n  \"is_featured\": true,\r\n  \"is_recent\": false,\r\n  \"desc\": \"product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 \"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/products",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "409"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"199-oXaCdLU56ZcxdQJbibTZDuWG97U\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:17:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Product 7 Cat2\",\n    \"image\": \"assets/img/prod-7.jpg\",\n    \"desc\": \"product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 \",\n    \"category_id\": \"63791c4b884035a561f15b47\",\n    \"is_featured\": true,\n    \"is_recent\": false,\n    \"price\": 120,\n    \"discount\": 0.25,\n    \"rating\": 5,\n    \"rating_count\": 120,\n    \"_id\": \"637aa7778770ff6238a036a3\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Products Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/products/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "849"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"351-mlDONuxQTpho/1E5lu2Kv5X0i5o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:19:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"637a29d6f5660971d21084a0\",\n            \"name\": \"Product 6 Cat2\",\n            \"image\": \"assets/img/prod-6.jpg\",\n            \"desc\": \"Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 \",\n            \"category_id\": \"63791c4b884035a561f15b47\",\n            \"is_featured\": false,\n            \"is_recent\": true,\n            \"price\": 110,\n            \"discount\": 0.25,\n            \"rating\": 3,\n            \"rating_count\": 120,\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"637aa7778770ff6238a036a3\",\n            \"name\": \"Product 7 Cat2\",\n            \"image\": \"assets/img/prod-7.jpg\",\n            \"desc\": \"product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 \",\n            \"category_id\": \"63791c4b884035a561f15b47\",\n            \"is_featured\": true,\n            \"is_recent\": false,\n            \"price\": 120,\n            \"discount\": 0.25,\n            \"rating\": 5,\n            \"rating_count\": 120,\n            \"__v\": 0\n        }\n    ],\n    \"status\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GetFeatured",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://warm-mesa-88190.herokuapp.com/api/products/getFeatured",
+							"protocol": "https",
+							"host": [
+								"warm-mesa-88190",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"getFeatured"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetFeatured Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/products/getFeatured/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"getFeatured",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "439"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b7-jXzSwn6Q57U6waNAbS0GaJ56pzc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:17:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"637aa7778770ff6238a036a3\",\n            \"name\": \"Product 7 Cat2\",\n            \"image\": \"assets/img/prod-7.jpg\",\n            \"desc\": \"product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 product 7 Cat2 \",\n            \"category_id\": \"63791c4b884035a561f15b47\",\n            \"is_featured\": true,\n            \"is_recent\": false,\n            \"price\": 120,\n            \"discount\": 0.25,\n            \"rating\": 5,\n            \"rating_count\": 120,\n            \"__v\": 0\n        }\n    ],\n    \"status\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GetRecent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/products/getRecent",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"getRecent"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetRecent Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/products/getRecent",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"getRecent"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "439"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b7-gy09AB9/wEP5dkAfYyVdq8pXoPA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:15:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"637a29d6f5660971d21084a0\",\n            \"name\": \"Product 6 Cat2\",\n            \"image\": \"assets/img/prod-6.jpg\",\n            \"desc\": \"Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 \",\n            \"category_id\": \"63791c4b884035a561f15b47\",\n            \"is_featured\": false,\n            \"is_recent\": true,\n            \"price\": 110,\n            \"discount\": 0.25,\n            \"rating\": 3,\n            \"rating_count\": 120,\n            \"__v\": 0\n        }\n    ],\n    \"status\": \"success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Products By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Product 6 Cat2\",\r\n  \"image\": \"assets/img/prod-6.jpg\",\r\n  \"category_id\": \"6346aed67c308ccff12e065c\",\r\n  \"price\": 110,\r\n  \"discount\": 0.25,\r\n  \"rating\": 3,\r\n  \"rating_count\": 120,\r\n  \"is_featured\": false,\r\n  \"is_recent\": true,\r\n  \"desc\": \"Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products/63792ba868090266ec457b99",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"63792ba868090266ec457b99"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Products By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/products/637a29d6f5660971d21084a0",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"637a29d6f5660971d21084a0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "409"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"199-TizMOhrO432io3JQ6ckDYiKgBp8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:12:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"637a29d6f5660971d21084a0\",\n    \"name\": \"Product 6 Cat2\",\n    \"image\": \"assets/img/prod-6.jpg\",\n    \"desc\": \"Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 \",\n    \"category_id\": \"63791c4b884035a561f15b47\",\n    \"is_featured\": false,\n    \"is_recent\": true,\n    \"price\": 110,\n    \"discount\": 0.25,\n    \"rating\": 3,\n    \"rating_count\": 120,\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Products By Category Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Product 6 Cat2\",\r\n  \"image\": \"assets/img/prod-6.jpg\",\r\n  \"category_id\": \"6346aed67c308ccff12e065c\",\r\n  \"price\": 110,\r\n  \"discount\": 0.25,\r\n  \"rating\": 3,\r\n  \"rating_count\": 120,\r\n  \"is_featured\": false,\r\n  \"is_recent\": true,\r\n  \"description\": \"Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products/getByCategoryId/63791c4b884035a561f15b47",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"getByCategoryId",
+								"63791c4b884035a561f15b47"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Products By Category Id Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/products/getByCategoryId/63791c4b884035a561f15b47",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"getByCategoryId",
+										"63791c4b884035a561f15b47"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "439"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b7-gy09AB9/wEP5dkAfYyVdq8pXoPA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:11:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"637a29d6f5660971d21084a0\",\n            \"name\": \"Product 6 Cat2\",\n            \"image\": \"assets/img/prod-6.jpg\",\n            \"desc\": \"Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 Product 6 Cat2 \",\n            \"category_id\": \"63791c4b884035a561f15b47\",\n            \"is_featured\": false,\n            \"is_recent\": true,\n            \"price\": 110,\n            \"discount\": 0.25,\n            \"rating\": 3,\n            \"rating_count\": 120,\n            \"__v\": 0\n        }\n    ],\n    \"status\": \"success\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Add Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjM0NmFjMjNiYjg2MmUwMWZlNGI2NTM1IiwiZW1haWwiOiJyYW15bWlicmFoaW1AeWFob28uY29tIiwiaWF0IjoxNjY1NTc2Nzg2LCJleHAiOjE2NjU1ODM5ODZ9.mR4AMOtel6wA7L_YT0e3PT5pSAoV9fAsage5rTTKjIE",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"category 2\",\r\n    \"image\":\"assets/img/cat-2.jpg\",\r\n    \"productCount\":0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://warm-mesa-88190.herokuapp.com/api/categories",
+							"protocol": "https",
+							"host": [
+								"warm-mesa-88190",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Category Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvdXNzZWYubWFyYWtzaHlAZ21haWwuY29tIiwiaWQiOiI2MzdhOTdhN2I2NmU1ZDllYjRlNDY0NzUiLCJpYXQiOjE2Njg5ODAzNzJ9.TUOZ2vdSFlqYKIBseNwveBIhFLOzrkGfaU_yKJQI9MI",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"category 3\",\r\n    \"image\":\"assets/img/cat-3.jpg\",\r\n    \"productCount\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "110"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6e-WMZG24Dpte2eeokixk+j6thbdco\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:10:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"category 3\",\n    \"image\": \"assets/img/cat-3.jpg\",\n    \"productCount\": 0,\n    \"_id\": \"637aa5e4ed9743add6744128\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "GetCategories Response",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Category 2\",\r\n    \"image\":\"assets/img/cat-2.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://warm-mesa-88190.herokuapp.com/api/categories",
+							"protocol": "https",
+							"host": [
+								"warm-mesa-88190",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetCategories Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Category 2\",\r\n    \"image\":\"assets/img/cat-2.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "140"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8c-5JMEGaTbK2XxEEPc4jr/HVxa8zI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:09:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"63791c4b884035a561f15b47\",\n            \"name\": \"category 2\",\n            \"image\": \"assets/img/cat-2.jpg\",\n            \"productCount\": 1,\n            \"__v\": 0\n        }\n    ],\n    \"status\": \"success\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"youssef.marakshy@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/users/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "334"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14e-ntNBC4A1dk9Ji3cRQJgevXLp1Vo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 21:39:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"637a97a7b66e5d9eb4e46475\",\n    \"first_name\": \"Youssef\",\n    \"last_name\": \"Fathy\",\n    \"email\": \"youssef.marakshy@gmail.com\",\n    \"authToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvdXNzZWYubWFyYWtzaHlAZ21haWwuY29tIiwiaWQiOiI2MzdhOTdhN2I2NmU1ZDllYjRlNDY0NzUiLCJpYXQiOjE2Njg5ODAzNzJ9.TUOZ2vdSFlqYKIBseNwveBIhFLOzrkGfaU_yKJQI9MI\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Ramy\",\r\n    \"last_name\":\"Ibrahim\",\r\n    \"email\":\"ramymibrahim@yahoo.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://warm-mesa-88190.herokuapp.com/api/users/register",
+							"protocol": "https",
+							"host": [
+								"warm-mesa-88190",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\":\"Youssef\",\r\n    \"last_name\":\"Fathy\",\r\n    \"email\":\"youssef.marakshy@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/users/register",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "334"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14e-6ZRpYDK2lIc+89mA+eHbOvLIU1M\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 21:09:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"first_name\": \"Youssef\",\n    \"last_name\": \"Fathy\",\n    \"email\": \"youssef.marakshy@gmail.com\",\n    \"_id\": \"637a97a7b66e5d9eb4e46475\",\n    \"authToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvdXNzZWYubWFyYWtzaHlAZ21haWwuY29tIiwiaWQiOiI2MzdhOTdhN2I2NmU1ZDllYjRlNDY0NzUiLCJpYXQiOjE2Njg5Nzg1OTl9.R-SwhBhZ07Pcn_q63xyiwoVRgQrKwXcsAztQO-9EDPs\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Add Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sub_total_price\": 100.0,\r\n    \"shipping\": 10.0,\r\n    \"total_price\": 110.0,\r\n    \"user_id\": \"6346ac23bb862e01fe4b6535\",\r\n    \"order_date\": \"2022-01-01\",\r\n    \"order_details\": [\r\n        {\r\n            \"product_id\": \"6346c15ea060efd7cae40589\",\r\n            \"price\": 25,\r\n            \"qty\": 2\r\n        },\r\n        {\r\n            \"product_id\": \"6346c186a060efd7cae4058b\",\r\n            \"price\": 25,\r\n            \"qty\": 2\r\n        }\r\n    ],\r\n    \"shipping_info\": {\r\n        \"first_name\": \"Ramy\",\r\n        \"last_name\": \"Ibrahim\",\r\n        \"email\": \"ramymibrahim@yahoo.com\",\r\n        \"mobile_number\": \"01092812848\",\r\n        \"address1\": \"20 M A\",\r\n        \"address2\": \"\",\r\n        \"country\": \"Egypt\",\r\n        \"city\": \"Cairo\",\r\n        \"state\": \"Zamalek\",\r\n        \"zip_code\": \"11211\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://warm-mesa-88190.herokuapp.com/api/orders",
+							"protocol": "https",
+							"host": [
+								"warm-mesa-88190",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Orders Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-access-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvdXNzZWYubWFyYWtzaHlAZ21haWwuY29tIiwiaWQiOiI2MzdhOTdhN2I2NmU1ZDllYjRlNDY0NzUiLCJpYXQiOjE2Njg5ODAzNzJ9.TUOZ2vdSFlqYKIBseNwveBIhFLOzrkGfaU_yKJQI9MI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sub_total_price\": 100.0,\r\n    \"shipping\": 10.0,\r\n    \"total_price\": 110.0,\r\n    \"user_id\": \"637a97a7b66e5d9eb4e46475\",\r\n    \"order_date\": \"2022-01-01\",\r\n    \"order_details\": [\r\n        {\r\n            \"product_id\": \"637a29d6f5660971d21084a0\",\r\n            \"price\": 25,\r\n            \"qty\": 2\r\n        }\r\n    ],\r\n    \"shipping_info\": {\r\n        \"first_name\": \"Youssef\",\r\n        \"last_name\": \"Fathy\",\r\n        \"email\": \"youssef.marakshy@gmail.com\",\r\n        \"mobile_number\": \"01092812848\",\r\n        \"address1\": \"20 M A\",\r\n        \"address2\": \"\",\r\n        \"country\": \"Egypt\",\r\n        \"city\": \"Cairo\",\r\n        \"state\": \"Zamalek\",\r\n        \"zip_code\": \"11211\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/orders",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "503"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f7-AT/FH9C8nXP2OENIcVesIBR4+lA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:05:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user_id\": \"637a97a7b66e5d9eb4e46475\",\n    \"total_price\": 110,\n    \"sub_total_price\": 100,\n    \"shipping\": 10,\n    \"order_date\": \"2022-01-01\",\n    \"order_details\": [\n        {\n            \"product_id\": \"637a29d6f5660971d21084a0\",\n            \"qty\": 2,\n            \"price\": 25,\n            \"_id\": \"637aa4c2f6f8f976c37b1713\"\n        }\n    ],\n    \"shipping_info\": {\n        \"first_name\": \"Youssef\",\n        \"last_name\": \"Fathy\",\n        \"email\": \"youssef.marakshy@gmail.com\",\n        \"mobile_number\": \"01092812848\",\n        \"address1\": \"20 M A\",\n        \"address2\": \"\",\n        \"country\": \"Egypt\",\n        \"city\": \"Cairo\",\n        \"state\": \"Zamalek\",\n        \"zip_code\": \"11211\"\n    },\n    \"_id\": \"637aa4c2f6f8f976c37b1712\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "GetOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://warm-mesa-88190.herokuapp.com/api/orders",
+							"protocol": "https",
+							"host": [
+								"warm-mesa-88190",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetOrders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/orders",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1037"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40d-VWPcU1ldqGCYb5jJXQE6yNCzl2A\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 20 Nov 2022 22:06:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"shipping_info\": {\n                \"first_name\": \"Youssef\",\n                \"last_name\": \"Fathy\",\n                \"email\": \"youssef.marakshy@gmail.com\",\n                \"mobile_number\": \"01092812848\",\n                \"address1\": \"20 M A\",\n                \"address2\": \"\",\n                \"country\": \"Egypt\",\n                \"city\": \"Cairo\",\n                \"state\": \"Zamalek\",\n                \"zip_code\": \"11211\"\n            },\n            \"_id\": \"637aa249e45523271b9cdae9\",\n            \"user_id\": \"637a97a7b66e5d9eb4e46475\",\n            \"total_price\": 110,\n            \"sub_total_price\": 100,\n            \"shipping\": 10,\n            \"order_date\": \"2022-01-01\",\n            \"order_details\": [\n                {\n                    \"product_id\": \"637a29d6f5660971d21084a0\",\n                    \"qty\": 2,\n                    \"price\": 25,\n                    \"_id\": \"637aa249e45523271b9cdaea\"\n                }\n            ],\n            \"__v\": 0\n        },\n        {\n            \"shipping_info\": {\n                \"first_name\": \"Youssef\",\n                \"last_name\": \"Fathy\",\n                \"email\": \"youssef.marakshy@gmail.com\",\n                \"mobile_number\": \"01092812848\",\n                \"address1\": \"20 M A\",\n                \"address2\": \"\",\n                \"country\": \"Egypt\",\n                \"city\": \"Cairo\",\n                \"state\": \"Zamalek\",\n                \"zip_code\": \"11211\"\n            },\n            \"_id\": \"637aa402e45523271b9cdaee\",\n            \"user_id\": \"637a97a7b66e5d9eb4e46475\",\n            \"total_price\": 110,\n            \"sub_total_price\": 100,\n            \"shipping\": 10,\n            \"order_date\": \"2022-01-01\",\n            \"order_details\": [\n                {\n                    \"product_id\": \"637a29d6f5660971d21084a0\",\n                    \"qty\": 2,\n                    \"price\": 25,\n                    \"_id\": \"637aa402e45523271b9cdaef\"\n                }\n            ],\n            \"__v\": 0\n        }\n    ],\n    \"status\": \"success\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
